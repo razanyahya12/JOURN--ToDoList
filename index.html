@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Journé | To-Do Organizer</title>
+
+    <!-- خطوط: العنوان + الخط اليدوي + التوقيع -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Gaegu:wght@400;700&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>JOURNÉ</h1>
+            <p>حــوّل أفكــارك العشوائـية إلى مهــام منظمــة.</p>
+        </header>
+
+
+        <!-- Input Section: الورقة الممزقة -->
+        <div class="paper-wrap">
+            <section class="input-section paper">
+
+                <label for="taskInput">to do list:</label>
+
+                <textarea
+                    id="taskInput"
+                    placeholder="مثال: يوم الاثنين اختبار كيمياء الأحد موعد عيادة الساعه 8:30 وأبي أخلص التقرير قبل الخميس ..."
+                ></textarea>
+
+                <button id="organizeBtn">
+                     نظّم مهامي
+                </button>
+
+            </section>
+        </div>
+
+
+        <!-- Results: ورقة ثانية -->
+        <div id="resultSection" class="paper-wrap hidden">
+            <section class="result-section paper">
+
+                <div class="result-header">
+                    <h2>مهامك المنظمة</h2>
+                    <span id="taskCount"></span>
+                </div>
+
+                <div id="tasksContainer"></div>
+
+            </section>
+        </div>
+
+
+        <!-- Signature -->
+        <footer class="signature">made by Razam</footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
